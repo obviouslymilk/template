@@ -2,5 +2,9 @@
 
 </script>
 
+<template>
+  <TheDude />
+</template>
+
 <style scoped>
 </style>

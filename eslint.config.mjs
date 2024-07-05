@@ -6,4 +6,9 @@ export default antfu({
     tsconfigPath: 'tsconfig.json',
   },
   isInEditor: true,
+}, {
+  files: ['**/*.vue'],
+  rules: [
+
+  ],
 })
