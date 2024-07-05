@@ -5,8 +5,5 @@ export default antfu({
   typescript: {
     tsconfigPath: 'tsconfig.json',
   },
-  formatters: {
-    css: true,
-    html: true,
-  },
+  isInEditor: true,
 })
