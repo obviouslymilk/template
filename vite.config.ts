@@ -1,5 +1,5 @@
+import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
-import path from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -8,26 +8,26 @@ export default defineConfig({
     alias: [
       {
         find: '@',
-        replacement: path.resolve(__dirname, './src')
-      }
-    ]
+        replacement: path.resolve(__dirname, './src'),
+      },
+    ],
   },
   server: {
-    port: 3001
+    port: 3001,
   },
   build: {
-    target: "es2015",
+    target: 'es2015',
     rollupOptions: {
       input: path.resolve(__dirname, './index.html'),
       output: {
-        chunkFileNames: "js/[name].[hash].js",
-        entryFileNames: "js/[name].[hash].js",
-        assetFileNames: "assets/[name].[hash].[ext]",
+        chunkFileNames: 'js/[name].[hash].js',
+        entryFileNames: 'js/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]',
         manualChunks: (id: string) => {
           if (id.includes('vue'))
             return 'vue'
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 })
