@@ -17,7 +17,9 @@
         "moduleResolution": "Bundler",
         "baseUrl": "./",
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": [
+                "src/*"
+            ]
         },
         "types": [
             "node",
@@ -30,6 +32,14 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true
     },
-    "include": ["./src", "./src/**/*.ts", "./src/**/*.vue"],
-    "exclude": ["node_modules", "dist"]
+    "include": [
+        "src",
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.vue"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
