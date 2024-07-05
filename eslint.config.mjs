@@ -11,4 +11,8 @@ export default antfu({
   rules: [
 
   ],
+}, {
+  rules: {
+    'no-console': false,
+  },
 })
