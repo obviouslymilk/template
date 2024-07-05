@@ -12,6 +12,7 @@ export default tseslint.config(
         languageOptions: {
             parserOptions: {
                 parser: '@typescript-eslint/parser',
+                ecmaVersion: "latest",
                 sourceType: 'module',
             }
         }
