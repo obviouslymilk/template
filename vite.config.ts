@@ -26,6 +26,7 @@ export default defineConfig({
         manualChunks: (id: string) => {
           if (id.includes('vue'))
             return 'vue'
+          return undefined
         },
       },
     },
