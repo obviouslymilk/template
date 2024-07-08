@@ -11,13 +11,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^2.3.0",
-    "typescript-eslint": "^7.15.0",
     "vue": "^3.4.31"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
     "@typescript-eslint/parser": "^7.15.0",
+    "@stylistic/eslint-plugin": "^2.3.0",
+    "typescript-eslint": "^7.15.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.6.0",
