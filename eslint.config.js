@@ -5,6 +5,7 @@ import stylistic from '@stylistic/eslint-plugin';
 export default ts.config(
   ...ts.configs.recommended,
   ...vue.configs['flat/recommended'],
+  stylistic.configs['recommended-flat'],
   {
     languageOptions: {
       parserOptions: {
@@ -28,9 +29,9 @@ export default ts.config(
         array: true,
         object: true
       },
-        {
-          enforceForRenamedProperties: true
-        }],
+      {
+        enforceForRenamedProperties: true
+      }],
       'func-style': ['error', 'expression'],
       'func-names': ['error', 'as-needed'],
       'no-loop-func': 'error',
