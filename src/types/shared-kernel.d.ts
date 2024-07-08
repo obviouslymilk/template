@@ -1,4 +1,4 @@
-type Nullable<T> = T | null
-type Optional<T> = T | undefined
+type Nullable<T> = T | null;
+type Optional<T> = T | undefined;
 
-type List<T> = T[]
+type List<T> = T[];
