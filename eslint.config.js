@@ -18,7 +18,6 @@ export default ts.config(
     rules: {
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'only-multiline'],
-      '@stylistic/quotes': ['error', 'single'],
 
       'no-var': 'error',
       'no-new-object': 'error',
