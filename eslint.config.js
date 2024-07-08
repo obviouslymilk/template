@@ -1,6 +1,6 @@
-import ts from 'typescript-eslint';
-import vue from 'eslint-plugin-vue';
-import stylistic from '@stylistic/eslint-plugin';
+import ts from 'typescript-eslint'
+import vue from 'eslint-plugin-vue'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default ts.config(
   ...ts.configs.recommended,
@@ -16,7 +16,6 @@ export default ts.config(
       '@stylistic': stylistic,
     },
     rules: {
-      '@stylistic/semi': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'only-multiline'],
 
       'no-var': 'error',
@@ -37,4 +36,4 @@ export default ts.config(
       'prefer-rest-params': 'error'
     },
   },
-);
+)
