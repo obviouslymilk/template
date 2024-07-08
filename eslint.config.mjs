@@ -14,5 +14,11 @@ export default antfu({
 }, {
   rules: {
     'no-console': ["off"],
+    'quotes': ['error', 'single'],
+    'func-style': ["error", "expression", {
+      "allowArrowFunctions": true
+    }],
+    'func-names': ["error", "always"],
+    'default-param-last': ['error'],
   },
 })
