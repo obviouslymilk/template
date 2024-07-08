@@ -1,7 +1,7 @@
-import path from 'node:path'
-import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
-import autoprefixer from 'autoprefixer'
+import path from 'node:path';
+import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite';
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   plugins: [vue()],
@@ -33,10 +33,10 @@ export default defineConfig({
         assetFileNames: 'assets/[name].[hash].[ext]',
         manualChunks: (id: string) => {
           if (id.includes('vue'))
-            return 'vue'
-          return undefined
+            return 'vue';
+          return undefined;
         },
       },
     },
   },
-})
+});
