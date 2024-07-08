@@ -8,16 +8,13 @@ importers:
 
   .:
     dependencies:
-      '@stylistic/eslint-plugin':
-        specifier: ^2.3.0
-        version: 2.3.0(eslint@9.6.0)(typescript@5.5.3)
-      typescript-eslint:
-        specifier: ^7.15.0
-        version: 7.15.0(eslint@9.6.0)(typescript@5.5.3)
       vue:
         specifier: ^3.4.31
         version: 3.4.31(typescript@5.5.3)
     devDependencies:
+      '@stylistic/eslint-plugin':
+        specifier: ^2.3.0
+        version: 2.3.0(eslint@9.6.0)(typescript@5.5.3)
       '@types/node':
         specifier: ^20.14.10
         version: 20.14.10
@@ -42,6 +39,9 @@ importers:
       typescript:
         specifier: ^5.5.3
         version: 5.5.3
+      typescript-eslint:
+        specifier: ^7.15.0
+        version: 7.15.0(eslint@9.6.0)(typescript@5.5.3)
       vite:
         specifier: ^5.3.3
         version: 5.3.3(@types/node@20.14.10)
