@@ -16,5 +16,12 @@ module.exports = {
         cacheName: 'images',
       },
     },
+    {
+      urlPattern: /\.(?:html|js|css)$/,
+      handler: 'NetworkFirst',
+      options: {
+        cacheName: 'static'
+      }
+    }
   ],
 };
