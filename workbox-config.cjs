@@ -1,7 +1,7 @@
 module.exports = {
   globDirectory: 'dist/',
   globPatterns: [
-    '**/*.{js,css,woff2}',
+    '**/*.{js,css,html}',
   ],
   swDest: 'dist/sw.js',
   ignoreURLParametersMatching: [
@@ -10,17 +10,17 @@ module.exports = {
   ],
   runtimeCaching: [
     {
-      urlPattern: /\.(?:png|jpg|jpeg|svg|webp|ico)$/,
+      urlPattern: /\.(?:png|jpg|jpeg|svg|webp|ico|woff2)$/,
       handler: 'CacheFirst',
       options: {
-        cacheName: 'images',
+        cacheName: 'assets',
       },
     },
     {
       urlPattern: /\.(?:html|js|css)$/,
       handler: 'NetworkFirst',
       options: {
-        cacheName: 'static'
+        cacheName: 'resources'
       }
     }
   ],
