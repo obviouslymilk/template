@@ -11,6 +11,7 @@ export default ts.config(
     languageOptions: {
       parserOptions: {
         parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.vue'],
         project: true,
       },
     },
