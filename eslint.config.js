@@ -1,15 +1,17 @@
-import ts from 'typescript-eslint';
-import vue from 'eslint-plugin-vue';
 import stylistic from '@stylistic/eslint-plugin';
+import vue from 'eslint-plugin-vue';
+import ts from 'typescript-eslint';
 
 export default ts.config(
-  ...ts.configs.recommended,
+  ...ts.configs.strictTypeChecked,
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
   ...vue.configs['flat/recommended'],
   stylistic.configs['recommended-flat'],
   {
     languageOptions: {
       parserOptions: {
         parser: '@typescript-eslint/parser',
+        project: true,
       },
     },
     plugins: {
