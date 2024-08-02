@@ -11,8 +11,8 @@
 *:where(
     :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
   ) {
-  all: unset;
   display: revert;
+  all: unset;
 }
 
 /* Preferred box-sizing value */
@@ -73,8 +73,8 @@ meter {
 
 /* preformatted text - use only for this feature */
 :where(pre) {
-  all: revert;
   box-sizing: border-box;
+  all: revert;
 }
 
 /* reset default text opacity of input placeholder */
@@ -92,11 +92,11 @@ meter {
    - fix for the content editable attribute will work properly.
    - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
 :where([contenteditable]:not([contenteditable='false'])) {
+  -webkit-user-select: auto;
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
@@ -106,8 +106,8 @@ meter {
 
 /* Revert Modal native behavior */
 :where(dialog:modal) {
-  all: revert;
   box-sizing: border-box;
+  all: revert;
 }
 
 /* Remove details summary webkit styles */
