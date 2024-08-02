@@ -21,6 +21,7 @@ export default ts.config(
     rules: {
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
 
       '@typescript-eslint/naming-convention': [
         'error',
