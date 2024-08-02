@@ -22,7 +22,7 @@ export default defineConfig({
   },
   server: {
     port: 3001,
-    host: true
+    host: true,
   },
   build: {
     target: 'es2015',
