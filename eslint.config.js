@@ -20,7 +20,22 @@ export default ts.config(
     },
     rules: {
       '@stylistic/semi': ['error', 'always'],
-      '@stylistic/comma-dangle': ['error', 'only-multiline'],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+
+      '@typescript-eslint/naming-convention': [
+        'error',
+        {
+          selector: 'variable',
+          types: ['boolean'],
+          format: ['PascalCase'],
+          prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+        },
+        {
+          selector: 'typeParameter',
+          format: ['PascalCase'],
+          custom: { regex: '^T[A-Z]', match: true },
+        },
+      ],
 
       'no-var': 'error',
       'no-new-object': 'error',
@@ -29,15 +44,23 @@ export default ts.config(
       'no-array-constructor': 'error',
       'prefer-destructuring': ['error', {
         array: true,
-        object: true
+        object: true,
       },
       {
-        enforceForRenamedProperties: true
+        enforceForRenamedProperties: true,
       }],
       'func-style': ['error', 'expression'],
       'func-names': ['error', 'as-needed'],
       'no-loop-func': 'error',
-      'prefer-rest-params': 'error'
+      'prefer-rest-params': 'error',
+      'brace-style': ['error', '1tbs', { allowSingleLine: false }],
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector: 'TSEnumDeclaration',
+          message: 'Use const assertion or a string union type instead.',
+        },
+      ],
     },
   },
 );
