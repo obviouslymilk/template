@@ -38,6 +38,8 @@ export default ts.config(
         },
       ],
 
+      'vue/html-quotes': ['error', 'single'],
+
       'no-var': 'error',
       'no-new-object': 'error',
       'object-shorthand': 'error',
