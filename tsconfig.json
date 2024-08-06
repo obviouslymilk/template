@@ -19,7 +19,8 @@
     "types": [
       "node",
       "vite/client",
-      "vue"
+      "vue",
+      "@obviouslymilk/front-lib"
     ],
     "allowJs": false,
     "strict": true,
