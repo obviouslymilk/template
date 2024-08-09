@@ -50,3 +50,8 @@
 отключить брандмауэр для общедоступных сетей в Windows Defender:
 
 **Безопасность Windows > Брандамуэр и безопасность сети > Общедоступная сеть**
+
+### Ресурсы
+
+- AirBnb JS Style Guide: https://github.com/airbnb/javascript
+- TS Style Guide: https://mkosir.github.io/typescript-style-guide/
