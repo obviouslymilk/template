@@ -39,6 +39,14 @@ export default ts.config(
       ],
 
       'vue/html-quotes': ['error', 'single'],
+      'vue/max-attributes-per-line': ['error', {
+        singleline: {
+          max: 1,
+        },
+        multiline: {
+          max: 1,
+        },
+      }],
 
       'no-var': 'error',
       'no-new-object': 'error',
