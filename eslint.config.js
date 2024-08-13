@@ -47,6 +47,8 @@ export default ts.config(
           max: 1,
         },
       }],
+      'vue/quote-props': ['error'],
+      'vue/prefer-true-attribute-shorthand': ['error', 'always'],
 
       'no-var': 'error',
       'no-new-object': 'error',
