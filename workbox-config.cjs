@@ -20,8 +20,8 @@ module.exports = {
       urlPattern: /\.(?:html|js|css)$/,
       handler: 'NetworkFirst',
       options: {
-        cacheName: 'static'
-      }
-    }
+        cacheName: 'static',
+      },
+    },
   ],
 };
