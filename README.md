@@ -25,7 +25,7 @@
 
 ### API
 
-Все роуты должны быть прописаны в [api.d.ts](src/types/api.d.ts)
+Все роуты должны быть прописаны в [api.ts](src/types/api.ts)
 в виде размеченного объединения. Для работы с API используется библиотека
 [axios](https://axios-http.com/docs/intro).
 
