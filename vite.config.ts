@@ -1,7 +1,6 @@
 import vue from '@vitejs/plugin-vue';
 import autoprefixer from 'autoprefixer';
 import path from 'node:path';
-import postcssPresetEnv from 'postcss-preset-env';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -10,10 +9,6 @@ export default defineConfig({
     postcss: {
       plugins: [
         autoprefixer({}),
-        postcssPresetEnv({
-          stage: 2,
-          browsers: '> 0.2% and not dead',
-        }),
       ],
     },
   },
