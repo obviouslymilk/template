@@ -22,9 +22,9 @@
 
 /* Fix mobile Safari increase font-size on landscape mode */
 html {
+  text-size-adjust: none;
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
-  text-size-adjust: none;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -85,10 +85,10 @@ meter {
    - fix for the content editable attribute will work properly.
    - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
 :where([contenteditable]:not([contenteditable="false"])) {
+  overflow-wrap: break-word;
   -webkit-user-select: auto;
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
 }
 
