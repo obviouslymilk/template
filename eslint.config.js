@@ -22,6 +22,7 @@ export default ts.config(
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/brace-style': ['error', '1tbs'],
 
       '@typescript-eslint/naming-convention': [
         'error',
@@ -57,7 +58,7 @@ export default ts.config(
       'no-array-constructor': 'error',
       'prefer-destructuring': ['error', {
         array: true,
-        object: true,
+        object: false,
       },
       {
         enforceForRenamedProperties: true,
