@@ -4,7 +4,6 @@ import ts from 'typescript-eslint';
 
 export default ts.config(
   ...ts.configs.strictTypeChecked,
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
   ...vue.configs['flat/recommended'],
   stylistic.configs['recommended-flat'],
   {
