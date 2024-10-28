@@ -62,6 +62,7 @@ export default ts.config(
       {
         enforceForRenamedProperties: true,
       }],
+      'func-style': ['error', 'expression'],
       'func-names': ['error', 'as-needed'],
       'no-loop-func': 'error',
       'prefer-rest-params': 'error',
