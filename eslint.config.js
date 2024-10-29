@@ -31,11 +31,6 @@ export default ts.config(
           format: ['PascalCase'],
           prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
         },
-        {
-          selector: 'typeParameter',
-          format: ['PascalCase'],
-          custom: { regex: '^T[A-Z]', match: true },
-        },
       ],
 
       'vue/html-quotes': ['error', 'single'],
