@@ -50,3 +50,4 @@
 - AirBnb JS Style Guide: https://github.com/airbnb/javascript
 - TS Style Guide: https://mkosir.github.io/typescript-style-guide/
 - Vue FAQ: https://vue-faq.org/
+- Conventional Commits: https://www.conventionalcommits.org/ru/
