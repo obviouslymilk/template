@@ -10,17 +10,6 @@
 * `pnpm install`
 * `pnpm dev`
 
-### Настройка среды разработки
-
-Проект создавался и подразумевался для работы в WebStorm 2024.1 и выше.
-Следующие настройки рекомендуются для работы с этим шаблоном:
-
-**Editor > Code Style > Style Sheets > CSS: Sort CSS Properties (Custom Order)**
-
-**Languages & Frameworks > JS > Code Quality Tools > ESLint: run eslint --fix on save**
-
-Работать с данным шаблоном в VSCode не рекомендуется в угоду стабильности WebStorm.
-
 ## Работа с проектом
 
 ### CSS
