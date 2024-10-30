@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-Hello!;
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div />
