@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "vite build &&  workbox generateSW ./workbox-config.cjs",
+    "build": "vue-tsc -b && vite build &&  workbox generateSW ./workbox-config.cjs",
     "preview": "vite preview"
   },
   "dependencies": {
