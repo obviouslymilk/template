@@ -3,6 +3,11 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
+  "browserslist": [
+    "last 2 years",
+    "> 1%",
+    "not dead"
+  ],
   "scripts": {
     "dev": "vite --host",
     "lint": "eslint .",
