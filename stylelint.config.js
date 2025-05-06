@@ -24,5 +24,18 @@ export default {
       },
     ],
     'declaration-no-important': true,
+    'value-keyword-case': [
+      'lower',
+      {
+        ignoreFunctions: ['/^(f|F)oo$/', 'v-bind'],
+      },
+    ],
+    'function-no-unknown': [true, { ignoreFunctions: ['v-bind'] }],
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: ['deep'],
+      },
+    ],
   },
 };
