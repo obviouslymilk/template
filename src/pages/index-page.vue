@@ -5,6 +5,3 @@
 <template>
   Привет, мир!
 </template>
-
-<style scoped>
-</style>

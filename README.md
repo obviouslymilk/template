@@ -14,6 +14,15 @@
 
 ## Работа с проектом
 
+В проекте используется строгий линтинг.
+Вместо использования команды `pnpm lint` и `pnpm lint:fix`
+можно установить следующие расширения для VSCode:
+
+* [Stylelint](https://marketplace.visualstudio.com/items/?itemName=stylelint.vscode-stylelint)
+* [ESLint](https://marketplace.visualstudio.com/items/?itemName=dbaeumer.vscode-eslint)
+
+Для Stylelint настройки [validate](vscode://settings/stylelint.validate) добавьте параметр `vue`.
+
 ### Дизайн-система
 
 Структура кодовой базы представляет собой плоский набор слоёв с явным разделением на зоны ответственности. Слоям стоит появляться только по необходимости. Могут существовать следующие слои:
