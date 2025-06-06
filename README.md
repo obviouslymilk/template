@@ -7,7 +7,7 @@
 ## Начало работы
 
 * Установите [pnpm](https://pnpm.io/installation)
-* `git clone git@git.ra1z.ru:mfo/front/template.front.git project-name -b vue --depth 1`
+* `git clone git@git.csnpl.ru:mfo/front/template.front.git project-name --depth 1`
 * Измените remote origin проекта на необходимый.
 * `pnpm install`
 * `pnpm dev`
