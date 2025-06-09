@@ -13,7 +13,8 @@
     "lint": "eslint ./src/**/*.{ts,vue} && stylelint ./src/**/*.{css,vue}",
     "lint:fix": "eslint ./src/**/*.{ts,vue} --fix && stylelint ./src/**/*.{css,vue} --fix",
     "build": "npm run lint && vite build && workbox generateSW ./workbox-config.cjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "vue": "^3.5.16",
@@ -27,6 +28,7 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9.28.0",
     "eslint-plugin-vue": "^9.33.0",
+    "husky": "^9.1.7",
     "postcss": "^8.5.4",
     "stylelint": "^16.20.0",
     "stylelint-config-hudochenkov": "^12.0.0",
