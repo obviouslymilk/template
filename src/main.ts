@@ -1,5 +1,4 @@
-import '@/assets/styles/index.css';
-import '@/assets/styles/reset.css';
+import '@/assets/styles/base.css';
 import { type Component, createApp } from 'vue';
 import App from './app.vue';
 import { router } from './router';
