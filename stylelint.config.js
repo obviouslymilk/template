@@ -20,7 +20,7 @@ export default {
     'plugin/use-baseline': [
       true,
       {
-        available: 'widely',
+        available: 'newly',
       },
     ],
     'declaration-no-important': true,
