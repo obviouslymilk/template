@@ -13,6 +13,7 @@ export default defineConfig({
     host: true,
   },
   build: {
+    emptyOutDir: true,
     target: 'es2015',
     rollupOptions: {
       input: path.resolve(__dirname, './index.html'),
