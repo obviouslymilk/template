@@ -17,12 +17,6 @@ export default {
     },
   ],
   rules: {
-    'plugin/use-baseline': [
-      true,
-      {
-        available: 'newly',
-      },
-    ],
     'declaration-no-important': true,
     'value-keyword-case': [
       'lower',
