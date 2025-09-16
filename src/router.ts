@@ -1,4 +1,4 @@
-import IndexPage from '@/pages/index-page.vue';
+import IndexPage from '@/pages/IndexPage.vue';
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 const routes = [
