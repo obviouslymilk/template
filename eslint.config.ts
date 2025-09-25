@@ -1,12 +1,13 @@
 import stylistic from '@stylistic/eslint-plugin';
 import vue from 'eslint-plugin-vue';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import ts from 'typescript-eslint';
 
 export default defineConfig(
   ...ts.configs.strictTypeChecked,
   ...vue.configs['flat/recommended'],
   stylistic.configs['recommended'],
+  globalIgnores(['**/*.config.js', '**/*.config.ts']),
   {
     languageOptions: {
       parserOptions: {
