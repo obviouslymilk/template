@@ -1,11 +1,12 @@
 import stylistic from '@stylistic/eslint-plugin';
 import vue from 'eslint-plugin-vue';
+import { defineConfig } from 'eslint/config';
 import ts from 'typescript-eslint';
 
-export default ts.config(
+export default defineConfig(
   ...ts.configs.strictTypeChecked,
   ...vue.configs['flat/recommended'],
-  stylistic.configs['recommended-flat'],
+  stylistic.configs['recommended'],
   {
     languageOptions: {
       parserOptions: {
@@ -14,14 +15,6 @@ export default ts.config(
         project: true,
       },
     },
-    ignores: [
-      'public',
-      'build',
-      'dist',
-      'node_modules',
-      'coverage',
-      'src/assets/**',
-    ],
     plugins: {
       '@stylistic': stylistic,
     },
@@ -30,16 +23,8 @@ export default ts.config(
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/arrow-parens': ['error', 'always'],
       '@stylistic/brace-style': ['error', '1tbs'],
-      '@stylistic/indent': ['error', 2],
-      '@stylistic/object-curly-newline': ['error', {
-        ObjectExpression: {
-          minProperties: 1,
-          consistent: true,
-        },
-      }],
-      '@stylistic/key-spacing': ['error', {
-        beforeColon: false,
-        afterColon: true,
+      '@stylistic/indent': ['error', 2, {
+        ObjectExpression: 'first',
       }],
 
       '@typescript-eslint/naming-convention': [
@@ -63,6 +48,7 @@ export default ts.config(
       }],
       'vue/quote-props': ['error'],
       'vue/prefer-true-attribute-shorthand': ['error', 'always'],
+      'vue/require-default-prop': 'off',
 
       'no-var': 'error',
       'no-new-object': 'error',
