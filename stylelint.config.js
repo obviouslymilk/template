@@ -1,13 +1,13 @@
 /** @type {import('stylelint').Config} */
 export default {
   extends: [
-    'stylelint-config-standard-vue',
+    'stylelint-config-recommended-vue',
     'stylelint-config-hudochenkov/full',
   ],
   plugins: [
-    'stylelint-plugin-use-baseline',
     'stylelint-order',
   ],
+  ignoreFiles: ['**/*.js', '**/*.ts'],
   overrides: [
     {
       files: [
@@ -17,11 +17,9 @@ export default {
     },
   ],
   rules: {
-    'plugin/use-baseline': [
-      true,
-      {
-        available: 'newly',
-      },
+    'order/order': [
+      'custom-properties',
+      'declarations',
     ],
     'declaration-no-important': true,
     'value-keyword-case': [
@@ -34,8 +32,12 @@ export default {
     'selector-pseudo-class-no-unknown': [
       true,
       {
-        ignorePseudoClasses: ['deep'],
+        ignorePseudoClasses: [
+          'deep',
+          'export',
+        ],
       },
     ],
+    'selector-class-pattern': '^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$|^Mui.*$|^([a-z][a-z0-9]*)(_[a-z0-9]+)*$',
   },
 };

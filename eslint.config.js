@@ -14,6 +14,14 @@ export default ts.config(
         project: true,
       },
     },
+    ignores: [
+      'public',
+      'build',
+      'dist',
+      'node_modules',
+      'coverage',
+      'src/assets/**',
+    ],
     plugins: {
       '@stylistic': stylistic,
     },
@@ -22,6 +30,17 @@ export default ts.config(
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/arrow-parens': ['error', 'always'],
       '@stylistic/brace-style': ['error', '1tbs'],
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/object-curly-newline': ['error', {
+        ObjectExpression: {
+          minProperties: 1,
+          consistent: true,
+        },
+      }],
+      '@stylistic/key-spacing': ['error', {
+        beforeColon: false,
+        afterColon: true,
+      }],
 
       '@typescript-eslint/naming-convention': [
         'error',
@@ -50,17 +69,20 @@ export default ts.config(
       'object-shorthand': 'error',
       'quote-props': ['error', 'as-needed'],
       'no-array-constructor': 'error',
-      'prefer-destructuring': ['error', {
-        array: true,
-        object: false,
-      },
-      {
-        enforceForRenamedProperties: true,
-      }],
+      'prefer-destructuring': ['error',
+        {
+          array: true,
+          object: false,
+        },
+        {
+          enforceForRenamedProperties: true,
+        }],
       'func-names': ['error', 'as-needed'],
       'no-loop-func': 'error',
       'prefer-rest-params': 'error',
-      'brace-style': ['error', '1tbs', { allowSingleLine: false }],
+      'brace-style': ['error', '1tbs', {
+        allowSingleLine: false,
+      }],
       'no-restricted-syntax': [
         'error',
         {
