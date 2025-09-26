@@ -7,8 +7,7 @@
 ## Начало работы
 
 * Установите [pnpm](https://pnpm.io/installation)
-* `git clone git@git.csnpl.ru:mfo/front/template.front.git project-name --depth 1`
-* Измените remote origin проекта на необходимый.
+* `pnpm dlx degit obviouslymilk/template my-projct`
 * `pnpm install`
 * `pnpm dev`
 
@@ -22,21 +21,6 @@
 * [ESLint](https://marketplace.visualstudio.com/items/?itemName=dbaeumer.vscode-eslint)
 
 Для Stylelint настройки [validate](vscode://settings/stylelint.validate) добавьте параметр `vue`.
-
-### Дизайн-система
-
-Структура кодовой базы представляет собой плоский набор слоёв с явным разделением на зоны ответственности. Слоям стоит появляться только по необходимости. Могут существовать следующие слои:
-
-* `api` — взаимодействие с бэкендом: запросы, типы данных и мапперы;
-* `assets` — стили, изображения, иконки и т.п.;
-* `components` — общая директория для UI-компонентов и страниц;
-* `composables` — Vue-composable для UI;
-* `directives` — Vue-директивы для UI;
-* `lib` — библиотечный код, используемый в других слоях;
-* `pages` — компоненты верхнего уровня для разных страниц сайта.
-* `model` — модель данных: схемы валидации, интерфейсы, сторы и бизнес-логика.
-
-Каждый файл или папка должны называться с помощью "kebab-case". Код, в свою очередь, должен соблюдать общепринятые принципы написания на JS/TS.
 
 ### CSS
 
