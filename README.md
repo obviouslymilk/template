@@ -7,7 +7,7 @@
 ## Начало работы
 
 * Установите [pnpm](https://pnpm.io/installation)
-* `pnpm dlx degit obviouslymilk/template my-projct`
+* `pnpm dlx degit obviouslymilk/template my-project`
 * `pnpm install`
 * `pnpm dev`
 
