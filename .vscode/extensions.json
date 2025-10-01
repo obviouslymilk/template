@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "vunguyentuan.vscode-css-variables",
+    "jacobcassidy.css-nesting-syntax-highlighting"
+  ]
+}
