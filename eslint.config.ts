@@ -77,6 +77,10 @@ export default defineConfig(
           message: 'Use const assertion or a string union type instead.',
         },
       ],
+      'no-console': [
+        'warn',
+        { allow: ['warn', 'error'] }
+      ],
     },
   },
 );
