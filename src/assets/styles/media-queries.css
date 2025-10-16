@@ -1,0 +1,5 @@
+:root {
+  @custom-media --viewport-phone (width <= 480px);
+  @custom-media --viewport-tablet (width <= 768px);
+  @custom-media --viewport-laptop (width <= 1200px);
+}

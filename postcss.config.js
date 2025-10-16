@@ -1,10 +1,16 @@
+import postcssGlobalData from '@csstools/postcss-global-data';
 import postcssPresetEnv from 'postcss-preset-env';
 
 /** @type {import('postcss-load-config').Config} */
 export default {
   plugins: [
+    postcssGlobalData({
+      files: [
+        './src/assets/styles/media-queries.css',
+      ]
+    }),
     postcssPresetEnv({
-      stage: 2
+      stage: 2,
     }),
   ],
 };
