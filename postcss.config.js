@@ -6,7 +6,7 @@ export default {
   plugins: [
     postcssGlobalData({
       files: [
-        './src/assets/styles/media-queries.css',
+        './src/assets/styles/tokens/media-queries.css',
       ]
     }),
     postcssPresetEnv({

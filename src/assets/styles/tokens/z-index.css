@@ -1,0 +1,11 @@
+:root {
+  --z-deep: 999;
+  --z-default: 1;
+  --z-masked: 100;
+  --z-mask: 200;
+  --z-sticky: 300;
+  --z-nav: 400;
+  --z-top-bar: 500;
+  --z-overlay: 600;
+  --z-modal: 1000;
+}
