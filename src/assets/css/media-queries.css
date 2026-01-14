@@ -1,3 +1,16 @@
+/**
+Пример использования брейкопинта в компоненте:
+
+@media (--viewport-sm) {
+  .container {
+    color: #0ff;
+  }
+}
+
+Стиль будет применён, когда размер экрана будет больше 640px.
+При изменении значений @custom-media во время разработки необходимо
+перезапустить dev-сервер, чтобы PostCSS смог применить новые значения.
+**/
 :root {
   @custom-media --viewport-phone (width <= 480px);
   @custom-media --viewport-tablet (width <= 768px);
